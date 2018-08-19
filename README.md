@@ -53,5 +53,5 @@
 * git push origin develop   # 推送develop分支到远端
 
 
-![image](https://github.com/RenGitName/GIT/raw/master/--no-ff.png)
+![image](https://github.com/RenGitName/GIT/blob/develop/--no-ff.png)
 ###我们有时会遇到这样的情况，正在开发分支开发新功能，做到一半时有人过来
