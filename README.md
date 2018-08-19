@@ -54,4 +54,31 @@
 
 
 ![image](https://github.com/RenGitName/GIT/blob/develop/--no-ff.png)
-###我们有时会遇到这样的情况，正在开发分支开发新功能，做到一半时有人过来
+
+
+
+###git merge 与  git rebase  区别
+
+*对于使用git merge来合并所看到的commit的顺序（从新到旧）--> 根据提交的时间顺序排列下来
+*对于使用git rebase来合并所看到的commit的顺序（从新到旧） --> 合并之后主分支会重新克隆被合并的分支提交信息并到主分支上
+
+
+###git stash 暂存代码
+
+*通过git stash save 'message'这条命令把未保存的修改的代码提交到本地暂开的仓库
+*通过git stash pop stash@{0} 可以恢复之前被暂存的代码
+*git stash list 可以查看现有的所有stash信息
+*git stash drop 可以删除某个或全部stash信息  单个为直接后面跟信息名称
+
+*此执行命令可以使得在开发人员未开发完成此次功能时，需介入其他分支开发，  所有可以使用这些命令管理这些未完成代码
+
+
+
+###回退版本
+
+*git reset --hard HEAD^   可以回退到上一个版本，也可以直接跟每一个的版本信息  直接跳到该版本信息下（查看版本信息是git log）
+*如果在回调回去之后后悔，也可以再返回，但需要知道版本号（版本ID），通过 git reflog查到每一个版本信息ID， 输入然后跳转
+
+*git diff 可以列举出本次提交修改过的代码
+
+
